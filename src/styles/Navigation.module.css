@@ -1,0 +1,33 @@
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.leftNavbar {
+  display: flex;
+  padding: 20px;
+  margin-left: 7%;
+}
+
+.navbarLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarLinks li {
+  list-style: none;
+  margin-left: 50%;
+}
+
+.navbarLinks a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbarPhoto {
+  padding: 20px;
+  margin-right: 5%;
+}
