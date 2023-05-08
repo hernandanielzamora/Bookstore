@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h2><b>Math Magicians</b></h2>
+  <h2><b>Bookstore</b></h2>
    <h3><b>Readme</b></h3>
 
 </div>
@@ -27,9 +27,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# MathMagicians <a name="about-project"></a>
+# Bookstore <a name="about-project"></a>
 
-Hello there and welcome a webpage for every math fan. Welcome to the MathMagicians! MathMagicians is a SPA (Single Page App) that allows the users to make simple calculations and also read a random math-related quote.
+Hello there and welcome a webpage for every reading fan. An application to keep track of your books!
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -40,6 +40,7 @@ Hello there and welcome a webpage for every math fan. Welcome to the MathMagicia
     <ul>
         <li><a href="https://html.spec.whatwg.org/multipage/">React</a></li>
         <li><a href="https://html.spec.whatwg.org/multipage/">Webpack</a></li>
+        <li><a href="https://html.spec.whatwg.org/multipage/">Redux</a></li>
     </ul>
 </details>
 
@@ -49,8 +50,7 @@ Hello there and welcome a webpage for every math fan. Welcome to the MathMagicia
 ### Key Features <a name="key-features"></a>
 
 
-- **[Make simple math operations]**
-- **[Show random math quotes]**
+- **[Add categories page]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -107,7 +107,6 @@ To run the project, execute the following command in your terminal (inside the m
 
 
 - [ ] **[Finishing the full website]**
-- [ ] **[Adding Navigation Functions]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
