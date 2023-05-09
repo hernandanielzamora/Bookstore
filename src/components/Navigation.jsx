@@ -10,10 +10,10 @@ const links = [
 
 function Navigation() {
   return (
-    <nav className={styles.navbarContainer}>
-      <div className={styles.leftNavbar}>
+    <nav className="flex-space flex-con navbar-container">
+      <div className="flex-con">
         <h1 className={styles.navbarTitle}>Bookstore CMS</h1>
-        <ul className={styles.navbarLinks}>
+        <ul className="flex-space navbar-links flex-con">
           {links.map((link) => (
             <li key={link.text}>
               <NavLink to={link.path}>{link.text}</NavLink>

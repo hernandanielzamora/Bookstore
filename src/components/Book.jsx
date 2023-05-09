@@ -15,7 +15,7 @@ const Book = ({
   };
 
   return (
-    <div className={styles.bookCard}>
+    <div className="flex-space flex-con book-card">
       <div className={styles.leftSide}>
         {/* Genre - Book - Author */}
         <div>
@@ -49,13 +49,13 @@ const Book = ({
       {/* Right Part Starts Here */}
 
       {/* 2nd Right Part */}
-      <div className={styles.cardRight}>
+      <div className="flex-con flex-space card-right">
         <div>
-          <div className={styles.porcentage}>
+          <div className="flex-con flex-space">
             <div className={styles.oval} />
             <div className={styles.numbers}>
               <p className={styles.porcentageNum}>64%</p>
-              <p className={styles.porcentageNum}>Completed</p>
+              <p className={styles.porcentageText}>Completed</p>
             </div>
           </div>
         </div>
