@@ -1,0 +1,56 @@
+.formContainer {
+  margin: 10% 8%;
+  align-self: center;
+  border-top: solid 1px #e8e8e8;
+  height: 20.125rem;
+}
+
+.formTitle {
+  height: 1.5rem;
+  margin: 1.813rem 32.75rem 1.188rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.titleInput {
+  width: 35rem;
+  height: 2.813rem;
+  margin-left: -0.4%;
+  margin-right: 1%;
+  padding: 1rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+.authorInput {
+  width: 17.813rem;
+  height: 2.813rem;
+  padding: 1rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+.submitBtn {
+  border: none;
+  letter-spacing: 0.5px;
+  height: 2.813rem;
+  color: #fff;
+  cursor: pointer;
+  width: 9rem;
+  background-color: #0290ff;
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  padding: 12px;
+  border-radius: 3px;
+  margin-left: 1%;
+  text-transform: uppercase;
+}

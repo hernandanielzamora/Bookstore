@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaUserAlt } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import styles from '../styles/Navigation.module.css';
 
@@ -21,7 +22,7 @@ function Navigation() {
         </ul>
       </div>
       <div className={styles.navbarPhoto}>
-        <h2>Profile Pic</h2>
+        <FaUserAlt className={styles.logo} />
       </div>
     </nav>
   );

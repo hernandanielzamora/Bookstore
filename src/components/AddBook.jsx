@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uId } from 'uuid';
 import { addBook } from '../redux/books/bookSlice';
+import styles from '../styles/AddBook.module.css';
 
 const AddBook = () => {
   const dispatch = useDispatch();
@@ -28,8 +29,8 @@ const AddBook = () => {
 
   return (
     <>
-      <div className="form-container">
-        <h2>Add a new Book</h2>
+      <div className={styles.formContainer}>
+        <h2 className={styles.formTitle}>Add a new Book</h2>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -39,6 +40,7 @@ const AddBook = () => {
             value={bookData.title}
             onChange={handleChange}
             required
+            className={styles.titleInput}
           />
           <input
             type="text"
@@ -48,8 +50,9 @@ const AddBook = () => {
             value={bookData.author}
             onChange={handleChange}
             required
+            className={styles.authorInput}
           />
-          <button type="submit" id="add-book">Add book</button>
+          <button type="submit" id="add-book" className={styles.submitBtn}>Add book</button>
         </form>
       </div>
     </>
