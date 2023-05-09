@@ -106,7 +106,7 @@
 .currentChapter {
   border-left: solid 1px #e8e8e8;
   margin-left: 15%;
-  padding: 5%;
+  padding: 2.5%;
   width: 100%;
 }
 
@@ -130,7 +130,7 @@
   height: 1.313rem;
   margin-top: 4%;
   margin-bottom: 10%;
-  font-family: RobotoSlab;
+  font-family: 'RobotoSlab', sans-serif;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
@@ -153,4 +153,20 @@
   text-transform: uppercase;
   color: #fff;
   text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .currentTitle {
+    margin-bottom: -2%;
+    padding-top: -5%;
+  }
+
+  .chapter {
+    margin-bottom: 1%;
+  }
+
+  .chapterBtn {
+    height: 2.5em;
+    padding: 2.5%;
+  }
 }

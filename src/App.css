@@ -17,3 +17,36 @@
   background: #fafafa;
   font-size: 1rem;
 }
+
+/* Categories */
+.categories-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories-btn {
+  border: none;
+  letter-spacing: 0.5px;
+  height: 2.813rem;
+  color: #fff;
+  cursor: pointer;
+  width: 9rem;
+  background-color: #0290ff;
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  padding: 12px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  align-items: center;
+  margin-left: 1%;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+.categories-msg {
+  align-self: center;
+  margin-top: 5%;
+  height: 5rem;
+  font-size: 2em;
+}
