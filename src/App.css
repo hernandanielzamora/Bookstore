@@ -5,11 +5,15 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --flex-display: flex;
+}
+
 /* Whole Page Container */
 .booknav-container {
   width: 90%;
   margin: 12% 5%;
-  display: flex;
+  display: var(--flex-display);
   flex-direction: column;
   justify-content: center;
   border-radius: calc(0.1 * 100px);
@@ -20,7 +24,7 @@
 
 /* Categories */
 .categories-container {
-  display: flex;
+  display: var(--flex-display);
   justify-content: center;
   align-items: center;
 }

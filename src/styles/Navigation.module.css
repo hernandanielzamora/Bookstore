@@ -1,5 +1,9 @@
+:root {
+  --flex-display: flex;
+}
+
 .navbarContainer {
-  display: flex;
+  display: var(--flex-display);
   justify-content: space-between;
   background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -21,13 +25,13 @@
 }
 
 .leftNavbar {
-  display: flex;
+  display: var(--flex-display);
   padding: 20px;
   margin-left: 7%;
 }
 
 .navbarLinks {
-  display: flex;
+  display: var(--flex-display);
   justify-content: space-between;
   align-items: center;
 }
