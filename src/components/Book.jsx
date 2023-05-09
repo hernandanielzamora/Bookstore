@@ -11,7 +11,7 @@ const Book = ({
   const dispatch = useDispatch();
 
   const handleRemove = (bookId) => {
-    dispatch(removeBook({ id: bookId }));
+    dispatch(removeBook(bookId));
   };
 
   return (
@@ -74,7 +74,7 @@ Book.propTypes = {
   category: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default Book;

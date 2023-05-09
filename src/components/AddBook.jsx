@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { v4 as uId } from 'uuid';
 import { addBook } from '../redux/books/bookSlice';
 
 const AddBook = () => {
@@ -9,27 +10,17 @@ const AddBook = () => {
     author: '',
   });
 
-  const booksArrLen = useSelector((state) => state.books.length);
-
   const handleChange = (e) => {
-    switch (e.target.id) {
-      case 'book-title':
-        setBooks({ ...bookData, title: e.target.value });
-        break;
-      case 'book-author':
-        setBooks({ ...bookData, author: e.target.value });
-        break;
-      default:
-        break;
-    }
+    setBooks({ ...bookData, [e.target.id]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const newBook = {
-      id: booksArrLen === 0 ? 0 : booksArrLen + 1,
+      item_id: uId(),
       title: bookData.title,
       author: bookData.author,
+      category: 'Action',
     };
     dispatch(addBook(newBook));
     setBooks({ title: '', author: '' });
@@ -44,7 +35,7 @@ const AddBook = () => {
             type="text"
             name="title"
             placeholder="Title..."
-            id="book-title"
+            id="title"
             value={bookData.title}
             onChange={handleChange}
             required
@@ -53,7 +44,7 @@ const AddBook = () => {
             type="text"
             name="author"
             placeholder="Author..."
-            id="book-author"
+            id="author"
             value={bookData.author}
             onChange={handleChange}
             required
