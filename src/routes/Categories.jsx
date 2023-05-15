@@ -11,16 +11,16 @@ const Categories = () => {
   };
 
   return (
-    <section>
+    <section className="categories-container">
       <div>
         <button
-          className=""
+          className="categories-btn"
           type="button"
           onClick={handleClick}
         >
           Check Status
         </button>
-        <h1>{message}</h1>
+        <h1 className="categories-msg">{message}</h1>
       </div>
     </section>
   );

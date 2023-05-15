@@ -7,7 +7,7 @@ import Navigation from './components/Navigation';
 function App() {
   return (
     <>
-      <div className="booknav-container">
+      <div className="booknav-container flex-con flex-center">
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />

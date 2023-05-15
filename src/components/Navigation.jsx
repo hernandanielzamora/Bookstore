@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaUserAlt } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import styles from '../styles/Navigation.module.css';
 
@@ -9,10 +10,10 @@ const links = [
 
 function Navigation() {
   return (
-    <nav className={styles.navbarContainer}>
-      <div className={styles.leftNavbar}>
+    <nav className="flex-space flex-con navbar-container">
+      <div className="flex-con">
         <h1 className={styles.navbarTitle}>Bookstore CMS</h1>
-        <ul className={styles.navbarLinks}>
+        <ul className="flex-space navbar-links flex-con">
           {links.map((link) => (
             <li key={link.text}>
               <NavLink to={link.path}>{link.text}</NavLink>
@@ -21,7 +22,7 @@ function Navigation() {
         </ul>
       </div>
       <div className={styles.navbarPhoto}>
-        <h2>Profile Pic</h2>
+        <FaUserAlt className={styles.logo} />
       </div>
     </nav>
   );

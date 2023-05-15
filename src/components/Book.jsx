@@ -15,7 +15,7 @@ const Book = ({
   };
 
   return (
-    <div className={styles.bookCard}>
+    <div className="flex-space flex-con book-card">
       <div className={styles.leftSide}>
         {/* Genre - Book - Author */}
         <div>
@@ -23,23 +23,23 @@ const Book = ({
           <h2 className={styles.title}>{title}</h2>
           <p className={styles.author}>{author}</p>
           {/* Comments - Remove - Edit */}
-          <ul>
+          <ul className={styles.btnContainer}>
             <Button
               title="Comments"
               handleClick={() => { }}
-              className="btn"
+              className={styles.btn}
             />
             <Button
               title="Remove"
               handleClick={() => {
                 handleRemove(id);
               }}
-              className="btn"
+              className={styles.btn}
             />
             <Button
               title="Edit"
               handleClick={() => { }}
-              className="btn"
+              className={styles.btn}
             />
           </ul>
         </div>
@@ -49,20 +49,23 @@ const Book = ({
       {/* Right Part Starts Here */}
 
       {/* 2nd Right Part */}
-      <div className={styles.cardRight}>
+      <div className="flex-con flex-space card-right">
         <div>
-          <div>
-            <p>20%</p>
-            <p>Completed</p>
+          <div className="flex-con flex-space">
+            <div className={styles.oval} />
+            <div className={styles.numbers}>
+              <p className={styles.porcentageNum}>64%</p>
+              <p className={styles.porcentageText}>Completed</p>
+            </div>
           </div>
         </div>
-        <div>
-          <h3>Current Chapter</h3>
-          <p>Chapter 12</p>
+        <div className={styles.currentChapter}>
+          <h3 className={styles.currentTitle}>Current Chapter</h3>
+          <p className={styles.chapter}>Chapter 12</p>
           <Button
             title="Update progress"
             handleClick={() => { }}
-            className="btn"
+            className={styles.chapterBtn}
           />
         </div>
       </div>
